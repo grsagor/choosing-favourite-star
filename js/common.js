@@ -1,6 +1,9 @@
+const ol = document.getElementById('selected-players');
+
 function showSelectedPlayer(btnId,playerNameId){
-    document.getElementById(btnId).addEventListener('click',function(){
-        const ol = document.getElementById('selected-players');
+    const button = document.getElementById(btnId);
+    
+    button.addEventListener('click',function(){
 
         const childNumber = ol.childElementCount;
         if(childNumber > 4){
@@ -13,5 +16,8 @@ function showSelectedPlayer(btnId,playerNameId){
         const newLi = document.createElement('li');
         newLi.innerText = name;
         ol.appendChild(newLi);
+
+        button.setAttribute('disabled','');
+        button.style.backgroundColor = 'gray';
     })
 }
