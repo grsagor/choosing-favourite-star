@@ -20,33 +20,33 @@
                 <div class="col-span-3 grid grid-cols-3 gap-4 text-center">
                     <div class="bg-black">
                         <img src="images/shakib.webp" alt="">
-                        <h1 class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
-                        <button class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
+                        <h1 id="player-one-name" class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
+                        <button id="btn-player-one" class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
                     </div>
                     <div class="bg-black">
                         <img src="images/shakib.webp" alt="">
-                        <h1 class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
-                        <button class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
+                        <h1 id="player-two-name" class="text-2xl font-bold m-2">Soumya Sarkar</h1>
+                        <button id="btn-player-two" class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
                     </div>
                     <div class="bg-black">
                         <img src="images/shakib.webp" alt="">
-                        <h1 class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
-                        <button class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
+                        <h1 id="player-three-name" class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
+                        <button id="btn-player-three" class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
                     </div>
                     <div class="bg-black">
                         <img src="images/shakib.webp" alt="">
-                        <h1 class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
-                        <button class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
+                        <h1 id="player-four-name" class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
+                        <button id="btn-player-four" class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
                     </div>
                     <div class="bg-black">
                         <img src="images/shakib.webp" alt="">
-                        <h1 class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
-                        <button class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
+                        <h1 id="player-five-name" class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
+                        <button id="btn-player-five" class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
                     </div>
                     <div class="bg-black">
                         <img src="images/shakib.webp" alt="">
-                        <h1 class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
-                        <button class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
+                        <h1 id="player-six-name" class="text-2xl font-bold m-2">Shakib Al Hasan</h1>
+                        <button id="btn-player-six" class="bg-blue-700 w-3/4 text-xl font-medium mb-5">Select</button>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@
                 <div>
                     <div class="bg-black">
                         <h1 class="text-center">Selected-V</h1>
-                        <ol class="list-decimal px-6">
+                        <ol id="selected-players" class="list-decimal px-6">
                             
                         </ol>
                     </div>
@@ -64,14 +64,14 @@
                             <div class="flex justify-between items-center">
                                 <div class="text-xl"><span>Per Player</span></div>
                                 <div><input class="w-40 h-12 bg-black border-2 border-white text-white text-xl"
-                                type="text" name="" id=""></div>
+                                type="text" name="" id="cost-per-player"></div>
                             </div>
                             <div>
-                                <button class="bg-blue-700 w-3/4 text-xl font-medium">Calculate</button>
+                                <button id="btn-calculate" class="bg-blue-700 w-3/4 text-xl font-medium">Calculate</button>
                             </div>
                             <div class="flex justify-start items-center">
                                 <div><span class="text-xl">Player Expense</span></div>
-                                <div class="ml-20 text-xl">$<span>00</span></div>
+                                <div class="ml-20 text-xl">$<span id="player-expense">00</span></div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div><span class="text-xl">Manager</span></div>
@@ -96,5 +96,9 @@
             </div>
         </section>
     </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/selected-players.js"></script>
+    <script src="js/calculate-player-cost.js"></script>
 </body>
 </html>
