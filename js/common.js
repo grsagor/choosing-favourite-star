@@ -7,13 +7,14 @@ function showSelectedPlayer(btnId,playerNameId){
 
         const childNumber = ol.childElementCount;
         if(childNumber > 4){
-            alert('No');
+            alert('You can not select more than 5 players.');
             return;
         }
         
         const nameElement = document.getElementById(playerNameId);
         const name = nameElement.innerText;
         const newLi = document.createElement('li');
+        newLi.style.fontSize = '18px'
         newLi.innerText = name;
         ol.appendChild(newLi);
 
